@@ -1,0 +1,6 @@
+check_name: 'Rubocop Results'
+versions:
+  - rubocop
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec

@@ -1,0 +1,38 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+
+Layout/FirstArgumentIndentation:
+  EnforcedStyle: consistent_relative_to_receiver
+
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+
+Layout/LineLength:
+  Max: 120
+
+Metrics/BlockLength:
+  ExcludedMethods:
+    - 'configure'
+    - 'context'
+    - 'describe'
+    - 'it'
+    - 'refine'
+
+Rails/FilePath:
+  EnforcedStyle: arguments
+
+Style/Documentation:
+  Exclude:
+    - spec/**/*
+    - test/**/*
+    - db/**/*
+
+Style/NumericLiterals:
+  MinDigits: 7
+
