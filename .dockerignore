@@ -1,0 +1,9 @@
+.git
+.github
+coverage
+k8s
+kustomization.yaml
+log
+node_modules
+spec
+tmp
