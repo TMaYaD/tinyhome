@@ -1,0 +1,15 @@
+scss_files: 'app/assets/stylesheets/**/*.scss'
+
+linters:
+  HexLength:
+    style: long
+
+  HexNotation:
+    enabled: true
+    style: uppercase
+
+  PropertySortOrder:
+    separate_groups: true
+
+  SpaceAfterVariableColon:
+    enabled: true

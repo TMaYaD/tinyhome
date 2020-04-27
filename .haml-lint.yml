@@ -1,0 +1,7 @@
+linters:
+  LineLength:
+    max: 120
+    exclude:
+      - app/views/application/_analytics.html.haml
+exclude:
+  - lib/templates/**/*

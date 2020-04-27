@@ -30,11 +30,16 @@ group :development, :test do
   gem 'faker'
   gem 'pry'
   gem 'rspec-rails'
+end
+
+group :lint do
+  gem 'haml_lint'
   gem 'rubocop' do
     gem 'rubocop-performance'
     gem 'rubocop-rails'
     gem 'rubocop-rspec'
   end
+  gem 'scss_lint'
 end
 
 group :development do
