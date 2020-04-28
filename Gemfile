@@ -43,8 +43,17 @@ group :lint do
 end
 
 group :development do
+  gem 'guard' do
+    gem 'guard-annotate', require: false
+    gem 'guard-bundler', require: false
+    gem 'guard-livereload', require: false
+    gem 'guard-migrate', require: false
+    gem 'guard-rspec', require: false
+    gem 'guard-rubocop', require: false
+  end
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'pry-rails'
+  gem 'rack-livereload'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.3.0'

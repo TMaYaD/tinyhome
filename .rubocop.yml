@@ -23,6 +23,8 @@ Metrics/BlockLength:
     - 'describe'
     - 'it'
     - 'refine'
+  Exclude:
+    - Guardfile
 
 Rails/FilePath:
   EnforcedStyle: arguments
