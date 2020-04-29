@@ -47,7 +47,9 @@ group :development do
   gem 'guard'
   group 'guard' do
     gem 'guard-annotate', require: false
+    gem 'guard-brakeman', require: false
     gem 'guard-bundler', require: false
+    gem 'guard-haml_lint', require: false
     gem 'guard-livereload', require: false
     gem 'guard-migrate', require: false
     gem 'guard-rspec', require: false

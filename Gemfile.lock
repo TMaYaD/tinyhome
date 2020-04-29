@@ -63,6 +63,7 @@ GEM
     bindex (0.8.1)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
+    brakeman (4.8.1)
     builder (3.2.4)
     byebug (11.1.1)
     coderay (1.1.2)
@@ -98,11 +99,19 @@ GEM
     guard-annotate (2.3)
       annotate (~> 2.4, >= 2.4.0)
       guard-compat (~> 1.2, >= 1.2.1)
+    guard-brakeman (0.8.6)
+      brakeman (>= 2.1.1)
+      guard (>= 2.0.0)
+      guard-compat (~> 1.0)
     guard-bundler (3.0.0)
       bundler (>= 2.1, < 3)
       guard (~> 2.2)
       guard-compat (~> 1.1)
     guard-compat (1.2.1)
+    guard-haml_lint (1.1.0)
+      guard (~> 2.2)
+      guard-compat (~> 1.2)
+      haml_lint (>= 0.30.0)
     guard-livereload (2.5.2)
       em-websocket (~> 0.5)
       guard (~> 2.8)
@@ -329,7 +338,9 @@ DEPENDENCIES
   faker
   guard
   guard-annotate
+  guard-brakeman
   guard-bundler
+  guard-haml_lint
   guard-livereload
   guard-migrate
   guard-rspec
