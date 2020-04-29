@@ -24,5 +24,5 @@ RUN yarn install --check-files
 
 RUN bundle exec rake assets:precompile
 
-ENTRYPOINT [ "bundle", "exec", "rails" ]
-CMD ["server"]
+ENTRYPOINT [ "bundle", "exec"]
+CMD ["rails", "server"]

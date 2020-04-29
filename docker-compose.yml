@@ -10,15 +10,17 @@ services:
       - NODE_ENV=development
       - RAILS_ENV=development
       - WEBPACKER_DEV_SERVER_HOST=0.0.0.0
-    entrypoint: ./bin/webpack-dev-server
+    command: ./bin/webpack-dev-server
     volumes:
       - .:/usr/src/app
       - node_modules:/usr/src/app/node_modules
+      - tmp:/usr/src/app/tmp
     ports:
       - '3035:3035'
   web:
     build: .
     command:
+      - rails
       - server
       - -b
       - 0.0.0.0
@@ -35,3 +37,4 @@ services:
       - webpacker
 volumes:
   node_modules:
+  tmp:

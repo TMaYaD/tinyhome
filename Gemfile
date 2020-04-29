@@ -34,7 +34,8 @@ end
 
 group :lint do
   gem 'haml_lint'
-  gem 'rubocop' do
+  gem 'rubocop'
+  group 'rubocop' do
     gem 'rubocop-performance'
     gem 'rubocop-rails'
     gem 'rubocop-rspec'
@@ -43,7 +44,8 @@ group :lint do
 end
 
 group :development do
-  gem 'guard' do
+  gem 'guard'
+  group 'guard' do
     gem 'guard-annotate', require: false
     gem 'guard-bundler', require: false
     gem 'guard-livereload', require: false
