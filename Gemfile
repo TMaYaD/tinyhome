@@ -5,14 +5,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 
-# Allow block on gem spec.
-Bundler::Dsl.prepend(Module.new do
-  def gem(name, *args)
-    super name, *args
-    yield if block_given?
-  end
-end)
-
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'haml-rails', '~> 2.0'
 gem 'jbuilder', '~> 2.7'
@@ -52,6 +44,8 @@ group :development do
     gem 'guard-haml_lint', require: false
     gem 'guard-livereload', require: false
     gem 'guard-migrate', require: false
+    gem 'guard-process', require: false
+    gem 'guard-puma', require: false
     gem 'guard-rspec', require: false
     gem 'guard-rubocop', require: false
   end

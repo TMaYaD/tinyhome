@@ -29,7 +29,7 @@ guard 'annotate', tests: false do
   # watch( 'config/routes.rb' )
 end
 
-guard :brakeman, quiet: false, run_on_start: true do
+guard :brakeman, quiet: true, run_on_start: true do
   watch(%r{^app/.+\.(erb|haml|rhtml|rb)$})
   watch(%r{^config/.+\.rb$})
   watch(%r{^lib/.+\.rb$})
@@ -100,6 +100,15 @@ end
 guard 'migrate' do
   watch(%r{^db/migrate/(\d+).+\.rb})
   watch('db/seeds.rb')
+end
+
+# guard 'process', name: 'Postgresq container', command: 'docker run' do
+#   watch('Gemfile.lock')
+# end
+
+guard 'puma', port: 3000 do
+  watch('Gemfile.lock')
+  watch(%r{^config|lib|api/.*})
 end
 
 # Using a testing Guard plugin such as guard-rspec together with guard-rubocop in the TDD way (the red-green-refactor
