@@ -5,14 +5,20 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 
+gem 'active_link_to', github: 'LoonyBin/active_link_to'
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'bootstrap'
+gem 'breadcrumble'
+gem 'font-awesome-rails'
 gem 'haml-rails', '~> 2.0'
 gem 'jbuilder', '~> 2.7'
+gem 'jquery-rails'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 gem 'sass-rails', '>= 6'
 gem 'simple_form'
+gem 'title'
 gem 'turbolinks', '~> 5'
 gem 'webpacker', '~> 4.0'
 

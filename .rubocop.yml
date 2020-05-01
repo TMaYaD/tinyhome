@@ -3,7 +3,14 @@ require:
   - rubocop-rails
   - rubocop-rspec
 
+inherit_mode:
+  merge:
+    - Include
+    - Exclude
+
 AllCops:
+  Exclude:
+    - config/initializers/simple_form_bootstrap.rb
   NewCops: enable
 
 Layout/FirstArgumentIndentation:

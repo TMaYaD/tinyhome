@@ -1,0 +1,7 @@
+= javascript_include_tag :application, 'data-turbolinks-track': 'reload'
+= yield :javascript
+=# render 'analytics'
+- if Rails.env.test?
+  = javascript_tag do
+    $.fx.off = true;
+    $.ajaxSetup({ async: false });

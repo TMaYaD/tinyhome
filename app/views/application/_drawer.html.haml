@@ -1,0 +1,18 @@
+%nav.navbar-default.navbar-static-side{ role: :navigation }
+  .sidebar-collapse
+    %ul.nav.metismenu#side-menu
+      %li.nav-header
+        .dropdown.profile-element
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            %span.block.m-t-xs.font-bold Example user
+            %span.text-muted.text-xs.block
+              Example menu
+              %b.caret
+          %ul.dropdown-menu.animated.fadeInRight.m-t-xs
+            %li
+              %a.dropdown-item{:href => "#"} Logout
+        .logo-element
+          IN+
+      = active_link_to root_path, active: :exact do
+        %i.fa.fa-laptop
+        %span.nav-label Main page

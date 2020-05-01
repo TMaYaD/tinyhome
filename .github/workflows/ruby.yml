@@ -12,8 +12,9 @@ jobs:
       uses: andrewmcodes/rubocop-linter-action@v3.1.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  rspec:
 
+  rspec:
+    
     runs-on: ubuntu-latest
 
     services:

@@ -1,0 +1,10 @@
+.row.wrapper.border-bottom.white-bg.page-heading
+  .col-lg-9
+    %h2= title
+    = render_breadcrumbs
+  .col-lg-3= yield :page_actions
+
+- if flash.any?
+  .flashes.mdl-color--white.mdl-shadow--2dp.mdl-cell.mdl-cell--12-col.mdl-grid
+    - user_facing_flashes.each do |key, value|
+      %div{ class: "flash-#{key}" }= value

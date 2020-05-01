@@ -1,11 +1,10 @@
-!!!
-%html
-  %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title= Rails.application.name
-    = csrf_meta_tags
-    = csp_meta_tag
-    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
-  %body
-    = yield
+= render 'layouts/base' do
+  %body.fixed-nav.fixed-nav-basic.fixed-sidebar{ class: body_classes }
+    #wrapper
+      = render 'drawer'
+      .gray-bg#page-wrapper
+        = render 'header'
+        = render 'page_header'
+        .wrapper.wrapper-content
+          = yield
+        = render 'footer'
