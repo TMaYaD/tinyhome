@@ -262,6 +262,9 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    responders (3.0.0)
+      actionpack (>= 5.0)
+      railties (>= 5.0)
     rexml (3.2.4)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
@@ -401,6 +404,7 @@ DEPENDENCIES
   puma (~> 4.1)
   rack-livereload
   rails (~> 6.0.2, >= 6.0.2.2)
+  responders
   rspec-rails
   rubocop
   rubocop-performance
