@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-sass-guidelines"
+  ],
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order"
+	],
+	"rules": {
+		"order/order": [
+			"custom-properties",
+			"declarations"
+		],
+    "order/properties-alphabetical-order": true,
+    "scss/selector-nest-combinators": "always"
+	}
+}

@@ -10,6 +10,12 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "stylelint": "^13.3.3",
+    "stylelint-config-sass-guidelines": "^7.0.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-group-selectors": "^1.0.7",
+    "stylelint-order": "^4.0.0",
+    "stylelint-scss": "^3.17.1",
     "webpack-dev-server": "^3.10.3"
   }
 }
