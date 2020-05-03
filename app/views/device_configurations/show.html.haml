@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @device_configuration.name
+%p
+  %b Location:
+  = @device_configuration.location
+%p
+  %b Module type:
+  = @device_configuration.module_type
+
+= link_to 'Edit', edit_device_configuration_path(@device_configuration)
+\|
+= link_to 'Back', device_configurations_path

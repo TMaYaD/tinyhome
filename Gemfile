@@ -9,6 +9,7 @@ gem 'active_link_to', github: 'LoonyBin/active_link_to'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'bootstrap'
 gem 'breadcrumble'
+gem 'enum_help'
 gem 'font-awesome-rails'
 gem 'haml-rails', '~> 2.0'
 gem 'jbuilder', '~> 2.7'
