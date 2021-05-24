@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.5'
+ruby '3.0.1'
 
 gem 'active_link_to', github: 'LoonyBin/active_link_to'
 gem 'bootsnap', '>= 1.4.2', require: false
