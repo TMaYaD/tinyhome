@@ -328,9 +328,9 @@ GEM
     semantic_range (3.0.0)
     sexp_processor (4.14.1)
     shellany (0.0.1)
-    simple_form (5.0.2)
-      actionpack (>= 5.0)
-      activemodel (>= 5.0)
+    simple_form (5.1.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     spoon (0.0.6)
       ffi
     spring (2.1.1)
