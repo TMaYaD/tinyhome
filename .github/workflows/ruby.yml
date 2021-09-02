@@ -13,7 +13,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: ruby/setup-ruby@v1
     - name: Rubocop Linter
-      uses: reviewdog/action-rubocop@v1
+      uses: reviewdog/action-rubocop@v2
       with:
         rubocop_version: gemfile
         rubocop_extensions: rubocop-rails:gemfile rubocop-performance:gemfile rubocop-rspec:gemfile rubocop-i18n:gemfile rubocop-rake:gemfile
