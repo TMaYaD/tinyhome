@@ -74,7 +74,7 @@ GEM
       activerecord (>= 2.3.0)
       rake (>= 0.8.7)
     ast (2.4.2)
-    autoprefixer-rails (10.3.1.0)
+    autoprefixer-rails (10.3.3.0)
       execjs (~> 2)
     bindex (0.8.1)
     bootsnap (1.9.1)
@@ -83,7 +83,7 @@ GEM
       autoprefixer-rails (>= 9.1.0)
       popper_js (>= 2.9.3, < 3)
       sassc-rails (>= 2.0.0)
-    brakeman (4.8.1)
+    brakeman (5.1.1)
     breadcrumble (5.0.0)
       rails (>= 4.0.0)
     builder (3.2.4)
@@ -92,7 +92,7 @@ GEM
     concurrent-ruby (1.1.9)
     crass (1.0.6)
     diff-lcs (1.4.4)
-    em-websocket (0.5.1)
+    em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     enum_help (0.0.17)
@@ -108,7 +108,7 @@ GEM
       railties (>= 5.0.0)
     faker (2.19.0)
       i18n (>= 1.6, < 2)
-    ffi (1.15.3)
+    ffi (1.15.4)
     font-awesome-rails (4.7.0.7)
       railties (>= 3.2, < 7)
     formatador (0.3.0)
@@ -162,7 +162,7 @@ GEM
     guard-rubocop (1.5.0)
       guard (~> 2.0)
       rubocop (< 2.0)
-    haml (5.2.1)
+    haml (5.2.2)
       temple (>= 0.8.0)
       tilt
     haml-rails (2.0.1)
@@ -200,13 +200,13 @@ GEM
     lumberjack (1.2.8)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
-    marcel (1.0.1)
+    marcel (1.0.2)
     method_source (1.0.0)
-    mini_mime (1.1.0)
+    mini_mime (1.1.1)
     mini_portile2 (2.6.1)
     minitest (5.14.4)
     msgpack (1.4.2)
-    multi_json (1.14.1)
+    multi_json (1.15.0)
     nenv (0.3.0)
     nio4r (2.5.8)
     nokogiri (1.12.5)
@@ -314,15 +314,8 @@ GEM
     rubocop-rspec (2.5.0)
       rubocop (~> 1.19)
     ruby-progressbar (1.11.0)
-    ruby_parser (3.14.2)
-      sexp_processor (~> 4.9)
-    sass (3.7.4)
-      sass-listen (~> 4.0.0)
-    sass-listen (4.0.0)
-      rb-fsevent (~> 0.9, >= 0.9.4)
-      rb-inotify (~> 0.9, >= 0.9.7)
-    sass-rails (6.0.0)
-      sassc-rails (~> 2.1, >= 2.1.1)
+    ruby_parser (3.17.0)
+      sexp_processor (~> 4.15, >= 4.15.1)
     sassc (2.4.0)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -331,10 +324,8 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    scss_lint (0.59.0)
-      sass (~> 3.5, >= 3.5.5)
     semantic_range (3.0.0)
-    sexp_processor (4.14.1)
+    sexp_processor (4.15.3)
     shellany (0.0.1)
     simple_form (5.1.0)
       actionpack (>= 5.2)
@@ -421,8 +412,7 @@ DEPENDENCIES
   rubocop-performance
   rubocop-rails
   rubocop-rspec
-  sass-rails (>= 6)
-  scss_lint
+  sassc-rails
   simple_form
   spring
   spring-watcher-listen (~> 2.0.0)
@@ -433,7 +423,7 @@ DEPENDENCIES
   webpacker (~> 5.4)
 
 RUBY VERSION
-   ruby 2.6.5p114
+   ruby 3.0.2p107
 
 BUNDLED WITH
-   2.1.4
+   2.2.22

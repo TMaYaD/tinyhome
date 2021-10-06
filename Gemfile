@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.1'
+ruby '3.0.2'
 
 gem 'active_link_to', github: 'LoonyBin/active_link_to'
 gem 'bootsnap', '>= 1.4.2', require: false
@@ -18,7 +18,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 5.5'
 gem 'rails', '~> 6.1.4'
 gem 'responders'
-gem 'sass-rails', '>= 6'
+gem 'sassc-rails'
 gem 'simple_form'
 gem 'title'
 gem 'turbolinks', '~> 5'
@@ -40,7 +40,6 @@ group :lint do
     gem 'rubocop-rails'
     gem 'rubocop-rspec'
   end
-  gem 'scss_lint'
 end
 
 group :development do
