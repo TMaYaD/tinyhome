@@ -11,7 +11,7 @@
   "version": "0.1.0",
   "devDependencies": {
     "stylelint": "^14.0.1",
-    "stylelint-config-sass-guidelines": "^9.0.0",
+    "stylelint-config-sass-guidelines": "^9.0.1",
     "stylelint-config-standard": "^23.0.0",
     "stylelint-group-selectors": "^1.0.8",
     "stylelint-order": "^5.0.0",
