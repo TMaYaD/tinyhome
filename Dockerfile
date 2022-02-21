@@ -1,4 +1,4 @@
-FROM ruby:3.1.0
+FROM ruby:3.1.1
 # Suppress the keyword argument warnings https://www.ruby-lang.org/en/news/2019/12/12/separation-of-positional-and-keyword-arguments-in-ruby-3-0/
 # ENV RUBYOPT='-W:no-deprecated -W:no-experimental'
 
