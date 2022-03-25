@@ -20,7 +20,7 @@ jobs:
 
       - name: Auto merge
         # Custom action for auto merging already available on marketplace
-        uses: pascalgn/automerge-action@v0.14.3
+        uses: pascalgn/automerge-action@v0.15.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # By default, whenever dependabot raises a PR, it automatically assigns a label named "dependencies"
