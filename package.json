@@ -16,6 +16,6 @@
     "stylelint-group-selectors": "^1.0.8",
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.2.0",
-    "webpack-dev-server": "^4.8.0"
+    "webpack-dev-server": "^4.8.1"
   }
 }
