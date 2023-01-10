@@ -56,7 +56,7 @@ group :development do
     gem 'guard-rspec', require: false
     gem 'guard-rubocop', require: false
   end
-  gem 'listen', '>= 3.0.5', '< 3.8'
+  gem 'listen', '>= 3.0.5', '< 3.9'
   gem 'pry-rails'
   gem 'rack-livereload'
   gem 'spring'
