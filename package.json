@@ -13,7 +13,7 @@
     "stylelint": "^14.16.1",
     "stylelint-config-sass-guidelines": "^9.0.1",
     "stylelint-config-standard": "^29.0.0",
-    "stylelint-group-selectors": "^1.0.9",
+    "stylelint-group-selectors": "^1.0.10",
     "stylelint-order": "^6.0.3",
     "stylelint-scss": "^5.0.1",
     "webpack-dev-server": "^4.15.1"

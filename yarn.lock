@@ -6852,10 +6852,10 @@ stylelint-config-standard@^29.0.0:
   dependencies:
     stylelint-config-recommended "^9.0.0"
 
-stylelint-group-selectors@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/stylelint-group-selectors/-/stylelint-group-selectors-1.0.9.tgz#ac4cff9573216e8a59af9a5e752c0909b33aa437"
-  integrity sha512-XwiHz2gcb+KTpwrLSL7/tJTmSjzwcN1SCnpaOTwbPjItyZC2E7hSybp5Ny1/QawHdRXF1zTiVSOms9Q+UOQ/Mw==
+stylelint-group-selectors@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/stylelint-group-selectors/-/stylelint-group-selectors-1.0.10.tgz#a9612909622284140f6e309c6275963ed899b091"
+  integrity sha512-t0FbKdKZFlbb2VFZ1cfU0+TUHlrPz0ORIuFCse1rVCvfYF0H75k4rRj544b1Lz6GTbdI3o1Yivotk8i8T6TvOA==
   dependencies:
     md5 "2.3.0"
     postcss "^8.4.14"
