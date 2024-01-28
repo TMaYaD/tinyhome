@@ -36,8 +36,10 @@ group :lint do
   gem 'haml_lint'
   gem 'rubocop'
   group 'rubocop' do
+    gem 'rubocop-i18n'
     gem 'rubocop-performance'
     gem 'rubocop-rails'
+    gem 'rubocop-rake'
     gem 'rubocop-rspec'
   end
 end
